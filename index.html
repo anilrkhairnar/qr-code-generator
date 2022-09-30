@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code | Generator</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="./Image/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title"><u> QR Code Generator </u></h1>
+    </div>
+    <div class="main" id="main">
+      <div class="qr-box">
+        <img src="./qrcode.png" class="" alt="QR Code" id="img" />
+        <span id="loader" class="loader hidden"></span>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          class="data"
+          placeholder="Enter The Data To Generate QR Code"
+          id="input"
+        />
+
+        <button class="submit" id="submit">Generate QR Code</button>
+      </div>
+    </div>
+  </body>
+  <script src="./App.js"></script>
+</html>
